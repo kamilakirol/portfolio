@@ -1,0 +1,15 @@
+.header {
+  background-color: $bg-color-main;
+
+  &_container {
+    display: flex;
+  }
+
+  &_icon {
+    width: 30%;
+  }
+
+  &_navbar {
+    width: 70%;
+  }
+}
