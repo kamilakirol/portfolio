@@ -1,36 +1,72 @@
 .burger {
-  width: 4rem;
-  height: 4rem;
-  padding: 1.125rem 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.8rem 0.75rem;
   background-color: $button-color-main;
   border-radius: 50%;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 
-  span {
-    display: block;
-    height: 0.25rem;
-    width: 2rem;
-    background-color: white;
-    margin-bottom: 0.5rem;
-    border-radius: 18%;
-    transition: 0.3s all ease-in-out;
+  &_bars {
+    position: absolute;
+    z-index: 1;
+
+    span {
+      display: block;
+      border-radius: 18%;
+      transition: 0.5s all ease-in-out;
+      height: 0.15rem;
+      width: 1rem;
+      background-color: white;
+
+      &:before {
+        content: "";
+        display: block;
+        border-radius: 18%;
+        transition: 0.5s all ease-in-out;
+        height: 0.15rem;
+        width: 1rem;
+        background-color: white;
+        position: absolute;
+        top: -5px;
+        transition-property: top, transform;
+        transition-duration: 0.3s, 0.3s;
+        transition-delay: 0.3s, 0s;
+      }
+
+      &:after {
+        content: "";
+        display: block;
+        border-radius: 18%;
+        height: 0.15rem;
+        width: 1rem;
+        background-color: white;
+        position: absolute;
+        top: 5px;
+        transition-property: top, transform;
+        transition-duration: 0.3s, 0.3s;
+        transition-delay: 0.3s, 0s;
+      }
+    }
   }
 }
 
 .isActive {
   span {
-    &:nth-child(1) {
-      transform: rotate(45deg) translate(6.5px, 8px);
+    background-color: transparent;
+    &:after {
+      top: 0;
+      transform: rotate(-45deg);
       border-radius: 25%;
+      transition-delay: 0s, 0.3s;
     }
 
-    &:nth-child(2) {
-      opacity: 0;
-    }
-
-    &:nth-child(3) {
-      transform: rotate(-45deg) translate(8.5px, -10px);
+    &:before {
+      top: 0;
+      transform: rotate(45deg);
       border-radius: 25%;
+      transition-delay: 0s, 0.3s;
     }
   }
 }
@@ -44,7 +80,19 @@
     display: none;
 
     &_active {
-      display: block;
+      position: fixed;
+      background-color: $button-color-main;
+      top: 0;
+      right: 0;
+      width: 18.75rem;
+      height: 18.75rem;
+      color: white;
+      font-weight: 600;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-bottom-left-radius: 300px;
     }
   }
 }

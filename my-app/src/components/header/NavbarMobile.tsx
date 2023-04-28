@@ -7,7 +7,7 @@ type Props = {
 const NavbarMobile = ({ openMenu }: Props) => {
   return (
     <ul
-      className={` ${!openMenu ? "navlist_mobile" : "navList_mobile_active"}`}
+      className={` ${!openMenu ? "navlist_mobile" : "navlist_mobile_active"}`}
     >
       <li>
         <Link to="/">Home</Link>

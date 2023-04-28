@@ -15,9 +15,9 @@ const Navbar = () => {
         className={`burger ${openMenu && "isActive"} `}
         onClick={handleClick}
       >
-        <span></span>
-        <span></span>
-        <span></span>
+        <div className="burger_bars">
+          <span></span>
+        </div>
       </div>
 
       <nav className="navlist">

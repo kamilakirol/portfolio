@@ -1,15 +1,24 @@
 .header {
   background-color: $bg-color-main;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
 
   &_container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   &_icon {
-    width: 30%;
+    width: 50%;
+    position: relative;
+    top: -13px;
+    left: -30px;
   }
 
   &_navbar {
-    width: 70%;
+    padding: 0.625rem 0;
+    position: relative;
   }
 }
