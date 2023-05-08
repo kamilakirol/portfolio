@@ -1,6 +1,5 @@
 import { useState } from "react";
-import NavbarDesktop from "./NavbarDesktop";
-import NavbarMobile from "./NavbarMobile";
+import NavbarList from "./NavbarList";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -20,10 +19,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <nav className="navlist">
-        <NavbarDesktop />
-        <NavbarMobile openMenu={openMenu} />
-      </nav>
+      <NavbarList openMenu={openMenu} />
     </>
   );
 };
