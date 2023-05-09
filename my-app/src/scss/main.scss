@@ -2,5 +2,8 @@
 @import "settings/colors";
 @import "settings/base";
 
+@import "../components/common/btn.scss";
+
 @import "../components/menuCircle/menuCircle";
 @import "../components/menuCircle/navbar";
+@import "../components/banner/banner.scss";

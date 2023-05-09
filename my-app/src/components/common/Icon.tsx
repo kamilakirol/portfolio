@@ -6,7 +6,7 @@ type Props = {
   height?: string;
   width?: string;
   viewBox?: string;
-};
+} & React.SVGProps<SVGSVGElement>;
 
 const Icon = ({
   name,
@@ -14,6 +14,7 @@ const Icon = ({
   height,
   color = "currentColor",
   viewBox = "0 0 16 16",
+  ...rest
 }: Props) => {
   return (
     <svg
@@ -22,6 +23,7 @@ const Icon = ({
       viewBox={viewBox}
       fill={color}
       xmlns="http://www.w3.org/2000/svg"
+      {...rest}
     >
       {icons[name]}
     </svg>
