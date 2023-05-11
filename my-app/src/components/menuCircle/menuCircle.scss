@@ -1,6 +1,13 @@
+@import "navbar";
+
 .menuCircle {
   position: fixed;
   z-index: 1;
   top: 0.65rem;
   right: 0.65rem;
+
+  @include mobile {
+    top: 1.2rem;
+    right: 1.2rem;
+  }
 }

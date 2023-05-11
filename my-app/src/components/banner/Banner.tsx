@@ -3,7 +3,7 @@ import Icon from "../common/Icon";
 
 const Banner = () => {
   return (
-    <div className="banner">
+    <section className="banner">
       <Icon
         name="bannerLaptop"
         viewBox="0 0 2000 2000"
@@ -17,7 +17,7 @@ const Banner = () => {
         <p className="banner_text">a frontend developer</p>
         <Button text="Projects" className="banner_button" />
       </div>
-    </div>
+    </section>
   );
 };
 
