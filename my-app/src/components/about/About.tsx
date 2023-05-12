@@ -4,7 +4,7 @@ import Button from "../common/Button";
 
 const About = () => {
   return (
-    <section className="about">
+    <section className="about" id="about">
       <Icon
         name="aboutKeyboard"
         viewBox="0 0 841.9 426.2"

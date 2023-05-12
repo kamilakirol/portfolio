@@ -5,9 +5,6 @@ $banner-font: "Source Code Pro", monospace;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
   font-family: $main-font;
 }
 
@@ -34,8 +31,9 @@ li {
 }
 
 .title {
-  font-size: 1.2rem;
-  margin-bottom: 0.6rem;
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
   text-transform: uppercase;
 
   @include mobile {
@@ -44,19 +42,20 @@ li {
   }
 
   @include tablet {
-    font-size: 2.2em;
+    font-size: 2.5em;
     margin-bottom: 1.4rem;
   }
   @include desktop {
     margin-top: 2rem;
     font-size: 3rem;
-    margin-bottom: 1.8rem;
+    margin-bottom: 2rem;
   }
 }
 
 .text {
-  font-size: 0.8rem;
-  line-height: 1.2rem;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
 
   @include mobile {
     font-size: 0.9rem;
@@ -64,13 +63,14 @@ li {
   }
 
   @include tablet {
-    font-size: 1rem;
-    line-height: 1.7rem;
+    font-size: 1.1rem;
+    line-height: 2rem;
     margin-bottom: 1rem;
   }
 
   @include desktop {
     font-size: 1.3rem;
-    line-height: 2rem;
+    line-height: 2.6rem;
+    margin-bottom: 2rem;
   }
 }

@@ -1,9 +1,26 @@
-import Navbar from "./Navbar";
+import { useState } from "react";
+import NavbarList from "./NavbarList";
 
 const MenuCircle = () => {
+  const [openMenu, setOpenMenu] = useState(false);
+
+  const handleClick = () => {
+    console.log("click");
+    setOpenMenu(!openMenu);
+  };
+
   return (
     <div className="menuCircle">
-      <Navbar />
+      <div
+        className={`burger ${openMenu && "isActive"} `}
+        onClick={handleClick}
+      >
+        <div className="burger_bars">
+          <span></span>
+        </div>
+      </div>
+
+      <NavbarList openMenu={openMenu} />
     </div>
   );
 };

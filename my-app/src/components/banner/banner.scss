@@ -1,18 +1,18 @@
 .banner {
   background-color: $bg-color-main;
   width: 100%;
-  height: 15.5rem;
+  height: 21rem;
   position: relative;
   display: flex;
   justify-content: center;
   overflow: hidden;
 
   @include mobile {
-    height: 23rem;
+    height: 30rem;
   }
 
   @include tablet {
-    height: 32rem;
+    height: 40rem;
   }
 
   @include desktop {
@@ -21,17 +21,17 @@
 
   &_img {
     position: absolute;
-    height: 32rem;
-    top: -100px;
+    height: 50rem;
+    top: -211px;
 
     @include mobile {
-      height: 57rem;
-      top: -256px;
+      height: 75rem;
+      top: -340px;
     }
 
     @include tablet {
-      height: 80rem;
-      top: -365px;
+      height: 100rem;
+      top: -455px;
     }
 
     @include desktop {
@@ -44,78 +44,89 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 10rem;
+    width: 15rem;
     justify-content: center;
-    padding-top: 6.5rem;
-    font-family: $banner-font;
+    padding-top: 6rem;
     isolation: isolate;
 
     @include mobile {
-      width: 15rem;
+      width: 22rem;
+      padding-top: 7rem;
     }
 
     @include tablet {
-      width: 21rem;
+      width: 30rem;
+      padding-top: 9rem;
     }
 
     @include desktop {
-      width: 35rem;
-      padding-top: 9rem;
+      width: 37rem;
     }
   }
 
   &_title,
   &_hi {
-    font-size: 0.95rem;
+    font-family: $banner-font;
+    font-size: 1.5rem;
     font-weight: 500;
     overflow: hidden;
     white-space: nowrap;
     letter-spacing: 0.03rem;
 
     @include mobile {
-      font-size: 1.5rem;
+      font-size: 2.2rem;
     }
 
     @include tablet {
-      font-size: 2.1rem;
+      font-size: 3rem;
     }
 
     @include desktop {
-      font-size: 3.6rem;
+      font-size: 3.8rem;
     }
   }
 
   &_hi {
+    margin-bottom: 0.4rem;
     animation: typing 0.8s steps(10, end);
   }
 
   &_title {
     opacity: 0;
-    padding-bottom: 0.4rem;
     animation: typing2 2s steps(40, end), blink 0.5s step-end infinite alternate;
     animation-delay: 0.8s;
     animation-fill-mode: forwards;
     text-align: center;
-
-    @include tablet {
-      padding-bottom: 0.8rem;
-    }
   }
 
   &_text {
-    font-size: 0.6rem;
+    font-size: 1rem;
+    opacity: 0;
+    animation: showAndZoom 1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    margin-top: 0.6rem;
 
     @include mobile {
-      font-size: 0.9rem;
+      font-size: 1.4rem;
+      margin-top: 1rem;
     }
 
     @include tablet {
-      font-size: 1.4rem;
+      font-size: 1.9rem;
+      margin-top: 1.5rem;
     }
 
     @include desktop {
-      font-size: 2.1rem;
+      font-size: 2.2rem;
     }
+  }
+
+  &_btn {
+    opacity: 0;
+    animation: showAndDropdown 1s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
   }
 }
 
@@ -151,5 +162,33 @@
 @keyframes blink {
   50% {
     border-color: transparent;
+  }
+}
+
+@keyframes showAndZoom {
+  1% {
+    opacity: 1;
+    transform: scale(2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes showAndDropdown {
+  0% {
+    transform: translateY(1000px);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(-100px);
+    transform: scale(2);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    transform: scale(1);
   }
 }
