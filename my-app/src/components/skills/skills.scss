@@ -1,36 +1,104 @@
 .skills {
   background-color: $bg-color-main;
   position: relative;
-  height: 21rem;
-  padding: 3rem 0;
+  height: 23rem;
+  padding: 3.5rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
 
+  @include mobile {
+    height: 28rem;
+    padding: 4rem 0;
+  }
+
+  @include tablet {
+    height: 35rem;
+    padding: 4.5rem 0;
+  }
+
+  @include desktop {
+    height: 47rem;
+    padding: 5rem 0;
+  }
+
   &_icon {
     position: absolute;
     top: 3rem;
-    height: 16.5rem;
+    height: 18rem;
+
+    @include mobile {
+      height: 23rem;
+    }
+
+    @include tablet {
+      height: 30rem;
+    }
+
+    @include desktop {
+      height: 40rem;
+      top: 4rem;
+    }
   }
 
   &_container {
     position: absolute;
     z-index: 2;
     margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &_box {
     display: flex;
-    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 18rem;
+
+    @include mobile {
+      max-width: 24rem;
+    }
+
+    @include tablet {
+      max-width: 31rem;
+    }
+
+    @include tablet {
+      max-width: 35rem;
+    }
+
     &_item {
-      width: 30px;
+      width: 1.6rem;
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: space-between;
+      margin: 0.6rem 0.9rem;
+
+      @include mobile {
+        width: 2.2rem;
+      }
+
+      @include tablet {
+        width: 2.8rem;
+        margin: 1rem 1.2rem;
+      }
+
+      @include desktop {
+        width: 3.6rem;
+        margin: 1.1rem 1.7rem;
+      }
 
       &_text {
         font-size: 0.5rem;
+        padding-top: 0.2rem;
+
+        @include desktop {
+          font-size: 1rem;
+          padding-top: 0.5rem;
+        }
       }
     }
   }

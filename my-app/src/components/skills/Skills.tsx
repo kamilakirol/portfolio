@@ -1,16 +1,16 @@
 import Icon from "../common/Icon";
 
 const iconsSkills: any = [
-  { name: "javascript", viewBox: "0 0 24 24" },
-  { name: "react", viewBox: "0 0 512 512" },
-  { name: "typescript", viewBox: "0 0 24 24" },
+  { name: "javascript", viewBox: "0 0 512 512" },
+  { name: "react", viewBox: "-11.5 -10.23174 23 20.46348" },
+  { name: "typescript", viewBox: "0 0 512 512" },
   { name: "nextjs", viewBox: "0 0 32 32" },
-  { name: "sass", viewBox: "0 0 32 32" },
-  { name: "html", viewBox: "0 0 1024 1024" },
-  { name: "css", viewBox: "0 0 32 32" },
+  { name: "sass", viewBox: "0 0 512 512" },
+  { name: "html", viewBox: "0 0 32 32" },
+  { name: "css", viewBox: "0 0 512 512" },
   { name: "git", viewBox: "0 0 92 92" },
-  { name: "bootstrap", viewBox: "0 0 16 16" },
-  { name: "tailwind", viewBox: "0 0 512 512" },
+  { name: "bootstrap", viewBox: "0 0 256 256" },
+  { name: "tailwind", viewBox: "0 0 1000 1000" },
 ];
 
 const Skills = () => {
@@ -20,8 +20,9 @@ const Skills = () => {
         name="whiteBoard"
         viewBox="0 0 782.81 688.75"
         className="skills_icon"
+        fill="black"
       />
-      <div className="coniatner skills_container">
+      <div className="container skills_container">
         <h2 className="title skills_title">My Skills</h2>
         <div className="skills_box">
           {iconsSkills.map((icon: any) => {
