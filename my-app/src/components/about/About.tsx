@@ -12,8 +12,13 @@ const About = () => {
         className="about_svg"
       />
       <div className="container about_container">
-        <img src={MeImg} alt=" avatar Kamila Kirol" className="about_img" />
-        <div className="about_box">
+        <img
+          src={MeImg}
+          alt=" avatar Kamila Kirol"
+          className="about_img"
+          data-aos="flip-left"
+        />
+        <div className="about_box" data-aos="fade-down" data-aos-delay="1000">
           <h2 className="title about_box_title">This is me</h2>
           <p className="text about_box_text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

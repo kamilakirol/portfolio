@@ -20,7 +20,6 @@
 
   @include desktop {
     height: 47rem;
-    padding: 5rem 0;
   }
 
   &_icon {
@@ -97,7 +96,8 @@
 
         @include desktop {
           font-size: 1rem;
-          padding-top: 0.5rem;
+          padding-top: 0.8rem;
+          text-transform: capitalize;
         }
       }
     }

@@ -9,13 +9,12 @@
   margin-top: 0.9rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 2s ease, transform 1s ease;
+  transition: background-color 1s ease;
   letter-spacing: 0.08rem;
   text-transform: uppercase;
 
   &:hover {
     background-color: $button-color-secondary;
-    transform: scale(1.2);
   }
 
   @include mobile {
