@@ -16,9 +16,10 @@ const About = () => {
           src={MeImg}
           alt=" avatar Kamila Kirol"
           className="about_img"
-          data-aos="flip-left"
+          data-aos="flip-down"
+          data-aos-delay="300"
         />
-        <div className="about_box" data-aos="fade-down" data-aos-delay="1000">
+        <div className="about_box " data-aos="zoom-in">
           <h2 className="title about_box_title">This is me</h2>
           <p className="text about_box_text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

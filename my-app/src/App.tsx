@@ -7,10 +7,11 @@ import Skills from "./components/skills/Skills";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import Projects from "./components/projects/Projects";
 
 function App() {
   useEffect(() => {
-    AOS.init({ duration: 3000 });
+    AOS.init({ duration: 2000, mirror: true, offset: 20 });
   }, []);
 
   return (
@@ -20,6 +21,7 @@ function App() {
       <Banner />
       <About />
       <Skills />
+      <Projects />
     </main>
   );
 }

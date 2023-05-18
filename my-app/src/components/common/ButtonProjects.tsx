@@ -7,10 +7,10 @@ type Props = {
   dataAosDelay?: string;
 };
 
-const Button = ({ text, className, dataAos, dataAosDelay }: Props) => {
+const ButtonProjects = ({ text, className, dataAos, dataAosDelay }: Props) => {
   return (
     <button
-      className={`btn ${className}`}
+      className={`buttonProjects ${className}`}
       data-aos={dataAos}
       data-aos-delay={dataAosDelay}
     >
@@ -19,4 +19,4 @@ const Button = ({ text, className, dataAos, dataAosDelay }: Props) => {
   );
 };
 
-export default Button;
+export default ButtonProjects;

@@ -1,0 +1,45 @@
+.projects {
+  background-color: $bg-color-projects;
+  color: $text-color-projects;
+  padding: 3rem 0;
+
+  &_container {
+    text-align: center;
+  }
+
+  &_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include tablet {
+      flex-direction: row;
+    }
+
+    &_img {
+      min-width: 20rem;
+      max-width: 50rem;
+    }
+
+    &_item {
+      &_title {
+        margin-bottom: 0.8rem;
+
+        @include mobile {
+          font-size: 1.3rem;
+        }
+      }
+
+      &_btns {
+        display: flex;
+        justify-content: center;
+        gap: 1.2rem;
+
+        @include desktop {
+          gap: 2.2rem;
+        }
+      }
+    }
+  }
+}
