@@ -1,43 +1,96 @@
 .projects {
   background-color: $bg-color-projects;
   color: $text-color-projects;
-  padding: 3rem 0;
+  padding: 2rem 0;
 
   &_container {
     text-align: center;
   }
 
-  &_box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  &_title {
+    margin: 2rem;
 
     @include tablet {
-      flex-direction: row;
+      margin: 3rem 0;
     }
 
-    &_img {
-      min-width: 20rem;
-      max-width: 50rem;
+    @include desktop {
+      margin: 6rem 0;
     }
+  }
 
+  &_box {
     &_item {
-      &_title {
-        margin-bottom: 0.8rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 0;
+      margin: 1rem 0.2rem;
+      background-color: $bg-color-main;
+      border: 0.2rem solid white;
+      border-radius: 1%;
+
+      @include tablet {
+        flex-direction: row;
+      }
+
+      &_img {
+        width: 16rem;
+        // transition: transform 0.5s;
+
+        // &:hover {
+        //   transform: scale(1.1);
+        // }
 
         @include mobile {
-          font-size: 1.3rem;
+          width: 20rem;
+        }
+
+        @include desktop {
+          width: 30rem;
+          margin-right: 5rem;
         }
       }
 
-      &_btns {
-        display: flex;
-        justify-content: center;
-        gap: 1.2rem;
+      &_container {
+        margin: 0.6rem;
 
-        @include desktop {
-          gap: 2.2rem;
+        &_title {
+          margin-top: 1.3rem;
+          margin-bottom: 0.7rem;
+          font-size: 0.9rem;
+
+          @include mobile {
+            font-size: 1.2rem;
+          }
+
+          @include desktop {
+            font-size: 1.8rem;
+            margin-bottom: 1.8rem;
+          }
+        }
+
+        &_text {
+          max-width: 27rem;
+
+          @include tablet {
+            max-width: 20rem;
+          }
+
+          @include desktop {
+            max-width: 29rem;
+          }
+        }
+
+        &_btns {
+          display: flex;
+          justify-content: center;
+          gap: 1.2rem;
+
+          @include desktop {
+            gap: 2.2rem;
+          }
         }
       }
     }
