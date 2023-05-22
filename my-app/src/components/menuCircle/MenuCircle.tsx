@@ -5,7 +5,6 @@ const MenuCircle = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
   const handleClick = () => {
-    console.log("click");
     setOpenMenu(!openMenu);
   };
 

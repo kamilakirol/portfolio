@@ -1,24 +1,12 @@
 type Props = {
   text: string;
   className?: string | undefined;
-  dataAos?: string;
-  dataAosDelay?: string;
-  link: string;
-};
+  link?: string;
+} & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-const ButtonProjects = ({
-  text,
-  className,
-  dataAos,
-  dataAosDelay,
-  link,
-}: Props) => {
+const ButtonProjects = ({ text, className, link, type }: Props) => {
   return (
-    <button
-      className={`buttonProjects ${className}`}
-      data-aos={dataAos}
-      data-aos-delay={dataAosDelay}
-    >
+    <button className={`buttonProjects ${className}`} type={type}>
       <a href={link} className="buttonProjects_link">
         {text}
       </a>

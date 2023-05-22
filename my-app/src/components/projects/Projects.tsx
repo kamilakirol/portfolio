@@ -53,6 +53,7 @@ const Projects = () => {
                 data-aos="fade-up"
                 data-aos-mirror="false"
                 data-aos-duration="1000"
+                key={item.title}
               >
                 <img
                   src={item.img}

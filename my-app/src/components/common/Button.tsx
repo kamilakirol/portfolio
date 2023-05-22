@@ -5,7 +5,7 @@ type Props = {
   className?: string | undefined;
   dataAos?: string;
   dataAosDelay?: string;
-};
+} & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 const Button = ({ text, className, dataAos, dataAosDelay }: Props) => {
   return (
