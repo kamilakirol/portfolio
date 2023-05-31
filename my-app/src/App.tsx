@@ -1,8 +1,7 @@
+import "./scss/main.scss";
 import ScrollToTop from "./components/scrollToTop/ScrollToTop";
 import About from "./components/about/About";
 import Banner from "./components/banner/Banner";
-import Navbar from "./components/menuCircle/MenuCircle";
-import "./scss/main.scss";
 import Skills from "./components/skills/Skills";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -10,6 +9,7 @@ import { useEffect } from "react";
 import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
+import MenuCircle from "./components/menuCircle/MenuCircle";
 
 function App() {
   useEffect(() => {
@@ -19,7 +19,7 @@ function App() {
   return (
     <main className="main">
       <ScrollToTop />
-      <Navbar />
+      <MenuCircle />
       <Banner />
       <About />
       <Skills />

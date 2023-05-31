@@ -74,9 +74,7 @@
         background-color: white;
         position: absolute;
         top: -0.6rem;
-        transition-property: top, transform;
-        transition-duration: 0.3s, 0.3s;
-        transition-delay: 0.3s, 0s;
+        transition: top 0.3s 0.3s, transform 0.3s 0s;
         z-index: 1;
 
         @include tablet {
