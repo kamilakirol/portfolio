@@ -1,0 +1,11 @@
+.footer {
+  background-color: $bg-color-secondary;
+  text-align: center;
+  padding: 2rem 0;
+
+  a {
+    color: $text-color-main;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+}

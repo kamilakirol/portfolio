@@ -6,9 +6,13 @@
   &_icon {
     position: absolute;
     display: none;
-    // width: 3rem;
-    // top: 3.5rem;
-    // right: 1rem;
+
+    @include desktop {
+      display: block;
+      width: 15rem;
+      top: 3rem;
+      right: 4rem;
+    }
   }
 
   &_container {
@@ -18,29 +22,49 @@
     text-align: center;
   }
 
+  &_title {
+    @include mobile {
+      margin-bottom: 1.5rem;
+    }
+  }
+
   &_text {
-    margin-bottom: 0;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
   }
 
   &_content {
-    width: 100%;
-
+    @include desktop {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
     &_boxes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      @include desktop {
+        flex-direction: column;
+        width: 30%;
+        align-items: center;
+      }
+
       &_item {
         border: 0.1rem solid $text-color-main;
-        margin: 2rem;
-        padding: 1rem;
-        max-width: 20rem;
+        margin: 0.5rem;
+        padding: 1.3rem 1rem;
+        width: 14rem;
 
         &_icon {
           width: 2.5rem;
-          margin-bottom: 0.5rem;
+          margin-bottom: 0.8rem;
         }
 
         &_title {
-          margin-bottom: 0.2rem;
+          margin-bottom: 0.4rem;
           font-weight: bold;
-          font-size: 0.9rem;
+          font-size: 1rem;
         }
 
         &_text {

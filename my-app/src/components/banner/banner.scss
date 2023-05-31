@@ -88,13 +88,14 @@
 
   &_hi {
     margin-bottom: 0.4rem;
-    animation: typing 0.8s steps(10, end);
+    animation: typing 0.4s steps(10, end);
   }
 
   &_title {
     opacity: 0;
-    animation: typing2 2s steps(40, end), blink 0.5s step-end infinite alternate;
-    animation-delay: 0.8s;
+    animation: typing2 1.5s steps(40, end),
+      blink 0.5s step-end infinite alternate;
+    animation-delay: 0.4s;
     animation-fill-mode: forwards;
     text-align: center;
   }
@@ -103,7 +104,7 @@
     font-size: 1rem;
     opacity: 0;
     animation: showAndZoom 1s;
-    animation-delay: 3s;
+    animation-delay: 1.9s;
     animation-fill-mode: forwards;
     margin-top: 0.6rem;
 
@@ -125,7 +126,7 @@
   &_btn {
     opacity: 0;
     animation: showAndDropdown 1s;
-    animation-delay: 4s;
+    animation-delay: 2s;
     animation-fill-mode: forwards;
   }
 }

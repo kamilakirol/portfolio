@@ -1,4 +1,3 @@
-import ButtonProjects from "../common/ButtonProjects";
 import Icon from "../common/Icon";
 import Form from "./Form";
 
@@ -33,10 +32,11 @@ const Contact = () => {
         name="messageContact"
         viewBox="0 0 34560 13716"
         className="contact_icon"
+        data-aos="fade-right"
       />
       <div className="container contact_container">
         <h2 className="title contact_title"> Contact</h2>
-        <p className="text contact_text">
+        <p className=" contact_text">
           Feel free to Contact me by submitting the form below and I will get
           back to you as soon as possible
         </p>
@@ -54,7 +54,6 @@ const Contact = () => {
                     {item.title}
                   </p>
                   <p className="contact_content_boxes_item_text">{item.user}</p>
-                  <ButtonProjects text="Contact with me" link={item.link} />
                 </div>
               );
             })}

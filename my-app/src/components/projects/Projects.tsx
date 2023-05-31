@@ -60,7 +60,7 @@ const Projects = () => {
                   alt={item.alt}
                   className="projects_box_item_img"
                   data-aos="flip-right"
-                  data-aos-delay="300"
+                  data-aos-delay="200"
                 />
                 <div className="projects_box_item_container">
                   <h3 className="projects_box_item_container_title">

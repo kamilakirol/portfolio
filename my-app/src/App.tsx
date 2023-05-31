@@ -9,10 +9,11 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
 
 function App() {
   useEffect(() => {
-    AOS.init({ duration: 2000, mirror: true, offset: 20 });
+    AOS.init({ duration: 1500, mirror: true, offset: 20 });
   }, []);
 
   return (
@@ -24,6 +25,7 @@ function App() {
       <Skills />
       <Projects />
       <Contact />
+      <Footer />
     </main>
   );
 }
