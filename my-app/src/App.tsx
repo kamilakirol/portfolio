@@ -1,5 +1,5 @@
 import "./scss/main.scss";
-// import ScrollToTop from "./components/scrollToTop/ScrollToTop";
+import ScrollToTop from "./components/scrollToTop/ScrollToTop";
 import About from "./components/about/About";
 import Banner from "./components/banner/Banner";
 import Skills from "./components/skills/Skills";
@@ -18,7 +18,7 @@ function App() {
 
   return (
     <main className="main">
-      {/* <ScrollToTop /> */}
+      <ScrollToTop />
       <MenuCircle />
       <Banner />
       <About />
