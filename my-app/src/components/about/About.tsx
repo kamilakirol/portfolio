@@ -22,13 +22,11 @@ const About = () => {
         <div className="about_box " data-aos="zoom-in">
           <h2 className="title about_box_title">This is me</h2>
           <p className="text about_box_text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            I’m a Junior Frontend Developer, who is passionate about creating
+            websites and applications. I’m developing my skills in JavaScript,
+            React and Next.js. I like to discover new possibilities and
+            libraries. I'm eager to find best solutions for all problems. I'm
+            currently looking for a new challenges.
           </p>
           <Button text="Get in touch" className="about_box_btn" />
         </div>

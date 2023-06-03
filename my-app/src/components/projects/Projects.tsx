@@ -10,23 +10,23 @@ const Projects = () => {
       img: ImgPortfolio,
       alt: "image portfolio Kamili Kirol",
       title: "My portfolio",
-      text: "1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      code: "wp.pl",
-      page: "onet.pl",
+      text: " Static website built with React, Typescript, SCSS, Formik, Yup and AOS ",
+      code: "https://github.com/kamilakirol/portfolio/tree/main",
+      page: "https://kirolkamila.netlify.app/",
     },
     {
       img: ImgReturnThins,
       alt: "image website return things",
       title: "Return things",
-      text: "2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      text: "Web application in React and Typescript with Firebase as data source",
       code: "https://github.com/kamilakirol/oddam_w_dobre_rece",
       page: "https://givethings-kamilakirol.netlify.app/",
     },
     {
       img: ImgAppToDo,
       alt: "image website app to do",
-      title: "ToDo App",
-      text: "3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      title: "Task management app",
+      text: "ToDo list with advanced state management (useReducer by React)",
       code: "https://github.com/kamilakirol/App_ToDo",
       page: "https://todoapp-kamilakirol.netlify.app/",
     },
@@ -35,7 +35,7 @@ const Projects = () => {
       img: ImgSensOfMove,
       alt: "image website sensory integration",
       title: "Sensory integration ",
-      text: "4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      text: "Simple landing page for sensory integration therapy built in React",
       code: "https://github.com/kamilakirol/SenseofMove",
       page: "https://websitesenseofmove-kamilakirol.netlify.app/",
     },
@@ -71,12 +71,12 @@ const Projects = () => {
                   </p>
                   <div className="projects_box_item_container_btns">
                     <ButtonProjects
-                      text="View the code"
+                      text="Code"
                       className="btn projects_box_item_container_btns_btn"
                       link={item.code}
                     />
                     <ButtonProjects
-                      text="Visit the app"
+                      text="Live"
                       className="btn projects_box_item_container_btns_btn"
                       link={item.page}
                     />
