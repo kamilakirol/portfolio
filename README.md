@@ -2,7 +2,7 @@ This is My Portfolio project page. On this page i show my projects with link to 
 
 You can see demo here: https://kirolkamila.netlify.app/
 
-![screenshot portfolio app](/my-app/public/assets/portfolio_3.png)
+![screenshot portfolio app](/my-app/public/assets/portfolio_3.jpg)
 ![screenshot portfolio app](/my-app/public/assets/portfolio_4.jpg)
 ![screenshot portfolio app](/my-app/public/assets/portfolio_1.jpg)
 ![screenshot portfolio app](/my-app/public/assets/portfolio_2.jpg)
