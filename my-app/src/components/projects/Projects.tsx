@@ -3,6 +3,7 @@ import ImgPortfolio from "../../images/portfolio_img.png";
 import ImgSensOfMove from "../../images/sensOfMove_img.jpg";
 import ImgReturnThins from "../../images/returnThings_img.jpg";
 import ImgAppToDo from "../../images/appToDo_img.jpg";
+import ImgWoofApp from "../../images/woofApp_img.jpg";
 
 const Projects = () => {
   const projectsList = [
@@ -13,6 +14,14 @@ const Projects = () => {
       text: " Static website built with React, Typescript, SCSS, Formik, Yup and AOS ",
       code: "https://github.com/kamilakirol/portfolio/tree/main",
       page: "https://kirolkamila.netlify.app/",
+    },
+    {
+      img: ImgWoofApp,
+      alt: "image website woof app",
+      title: "Woof application",
+      text: "Web app for searching dog breeds information.",
+      code: "https://github.com/kamilakirol/woof",
+      page: "https://woofapp-kamilakirol.netlify.app/",
     },
     {
       img: ImgReturnThins,
